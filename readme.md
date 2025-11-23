@@ -1,25 +1,26 @@
-**Simple Change Data Capture for Everyone**
+# Simple Change Data Capture for Everyone
 
 In the past, keeping data in sync between databases and other systems was hard. Companies often built custom scripts or used slow batch jobs. This made data out of date and hard to manage. Debezium was created to solve this problem. It is an open-source project started by Red Hat, designed to make Change Data Capture (CDC) easy, fast, and reliable for everyone. Now, with Debezium, you can stream every change in your database to other systems in real-time.
 
 Debezium has grown to support many databases and is used by companies around the world to build modern, event-driven systems. With Debezium, you can keep your data fresh and consistent everywhere, and react to changes as they happen.
 
 ## Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Architecture Diagram](#architecture-diagram)
-- [1. Main Components of Debezium](#1-main-components-of-debezium)
-- [2. Goals and Benefits](#2-goals-and-benefits)
-  - [Goals](#goals)
-  - [Benefits](#benefits)
-- [3. Short History](#3-short-history)
-- [4. When Should You Use Debezium?](#4-when-should-you-use-debezium)
-- [Dependency Preparation](#dependency-preparation)
-- [Mapping Flow Data From Postges to Kafka via Debezerium](#mapping-flow-data-from-postges-to-kafka-via-debezerium)
-- [Step-by-Step Deployment \& Config](#step-by-step-deployment--config)
-  - [1. Starting Docker Services](#1-starting-docker-services)
-  - [2. Checking All Service Running](#2-checking-all-service-running)
-  - [3. PostgreSQL Setup](#3-postgresql-setup)
-  - [4. Debezium Connector Configuration](#4-debezium-connector-configuration)
+- [Simple Change Data Capture for Everyone](#simple-change-data-capture-for-everyone)
+  - [Table of Contents](#table-of-contents)
+  - [Architecture Diagram](#architecture-diagram)
+  - [1. Main Components of Debezium](#1-main-components-of-debezium)
+  - [2. Goals and Benefits](#2-goals-and-benefits)
+    - [Goals](#goals)
+    - [Benefits](#benefits)
+  - [3. Short History](#3-short-history)
+  - [4. When Should You Use Debezium?](#4-when-should-you-use-debezium)
+  - [Dependency Preparation](#dependency-preparation)
+  - [Mapping Flow Data From Postges to Kafka via Debezerium](#mapping-flow-data-from-postges-to-kafka-via-debezerium)
+  - [Step-by-Step Deployment \& Config](#step-by-step-deployment--config)
+    - [1. Starting Docker Services](#1-starting-docker-services)
+    - [2. Checking All Service Running](#2-checking-all-service-running)
+    - [3. PostgreSQL Setup](#3-postgresql-setup)
+    - [4. Debezium Connector Configuration](#4-debezium-connector-configuration)
 
 
 
