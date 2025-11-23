@@ -14,6 +14,7 @@ Debezium has grown to support many databases and is used by companies around the
 - [3. Short History](#3-short-history)
 - [4. When Should You Use Debezium?](#4-when-should-you-use-debezium)
 - [Dependency Preparation](#dependency-preparation)
+- [Mapping Flow Data From Postges to Kafka via Debezerium](#mapping-flow-data-from-postges-to-kafka-via-debezerium)
 - [Step-by-Step Deployment \& Config](#step-by-step-deployment--config)
   - [1. Starting Docker Services](#1-starting-docker-services)
   - [2. Checking All Service Running](#2-checking-all-service-running)
@@ -103,6 +104,13 @@ Before running Debezium, you need to prepare several main components. For this e
 
 Each image above is downloaded from Docker Hub and used to run the respective service in your environment. This makes the setup process fast, repeatable, and easy to maintain.
 
+## Mapping Flow Data From Postges to Kafka via Debezerium 
+
+The diagram below shows how data changes in PostgreSQL are captured by Debezium, sent to Kafka, and then made available for other systems to consume. This mapping helps visualize the journey of each change event, from the source database, through the CDC pipeline, and into Kafka topics, making real-time integration and analytics possible.
+
+![Download Debezium Image](design/mapping.png)
+
+
 ## Step-by-Step Deployment & Config 
 
 ### 1. Starting Docker Services
@@ -163,7 +171,7 @@ docker-compose up
 
   ![Debezium Step 4](ss/debezium-4.png)
 
--  Shows change events being sent change data send to Kafka topics.
+-  Shows change events being sent change data on postgres database send to Kafka topics.
 
   ![Debezium Step 5](ss/debezium-5.png)
 
