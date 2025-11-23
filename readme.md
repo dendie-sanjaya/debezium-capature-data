@@ -1,4 +1,4 @@
-Simple Change Data Capture for Everyone
+**Simple Change Data Capture for Everyone**
 
 In the past, keeping data in sync between databases and other systems was hard. Companies often built custom scripts or used slow batch jobs. This made data out of date and hard to manage. Debezium was created to solve this problem. It is an open-source project started by Red Hat, designed to make Change Data Capture (CDC) easy, fast, and reliable for everyone. Now, with Debezium, you can stream every change in your database to other systems in real-time.
 
@@ -128,18 +128,13 @@ docker-compose up
 ```
 ![Docker Services](ss/docker.png)
 
-![Docker Run Service](ss/docker-run-service.png)
-
 ### 2. Checking All Service Running 
 - Shows All service running and ready to accept connections.
   
   ![Kafka](ss/docker-run-service.png)
 
 ### 3. PostgreSQL Setup
-- PostgreSQL service running, ready for connections.
-  ![Postgres Setup](ss/images-postgres.png)
-
-- Initial database setup, including the creation of the `inventory` database.
+- PostgreSQL service running, ready for connections & Initial database setup, including the creation of the `inventory` database.
   ![Postgres Step 1](ss/postgres-1.png)
 
 - Creation of the `products` table and insertion of sample data.
@@ -174,6 +169,3 @@ docker-compose up
 -  Shows change events being sent change data on postgres database send to Kafka topics.
 
   ![Debezium Step 5](ss/debezium-5.png)
-
-
-
