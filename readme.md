@@ -4,9 +4,7 @@ In the past, keeping data in sync between databases and other systems was hard. 
 
 Debezium has grown to support many databases and is used by companies around the world to build modern, event-driven systems. With Debezium, you can keep your data fresh and consistent everywhere, and react to changes as they happen.
 
-## Table of Contents
 - [Simple Change Data Capture for Everyone](#simple-change-data-capture-for-everyone)
-  - [Table of Contents](#table-of-contents)
   - [Architecture Diagram](#architecture-diagram)
   - [1. Main Components of Debezium](#1-main-components-of-debezium)
   - [2. Goals and Benefits](#2-goals-and-benefits)
